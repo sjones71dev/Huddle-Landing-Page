@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+
+}
+
+/* Reset Browser */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: context-menu;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+  }
+a, a:link, a:visited, a:active, a:any-link{
+    color: currentColor;
+    text-decoration: none;
+    cursor: pointer;    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--violet);
+    color: #fff;
+    padding: 50px 0px;
+    overflow: hidden;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+header{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.huddle-icon{
+    display block;
+    height: 50px;
+    width: 215px;
+    margin-bottom: 90px;
+    background-image: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100%;
+    grid-gap: 5px;
+    padding: 5px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    height: calc(100% - 125px);
+}
+.mockups-area{
+    border: 1px solid red;
+}
+.mockups-area img{
+    width: 100%;
+
+}
+.detail-area{
+    padding: 40px 15px 40px 46px;
+    border: 1px solid red;
+}
+
+.detail-area h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.detail-area p{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 26px;
+    text-align: left;
+}
+.register-btn{
+    display: block;
+    margin: 25px 1px;
+    width: 200px;
+    height: 58px;
+    background-color: #fff;
+    border-radius: 29px;
+
+    cursor: pointer;
+    color: var(--violet);
+    transition: 0.3s color ease-in-out, 0.3s background-color ease-in-out;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.25);
+}
+.register-btn span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: inherit;
+}
+
+.register-btn:hover{
+    color: white;
+    background-color: var(--magenta);
+}
+
+.social-menu{
+    list-style: none;
+    display: flex;
+    color: #fff;
+    position: absolute;
+    right: 4px;
+    bottom: 0;
+    width: 153px;
+    padding-bottom: 3px;
+}
+.social-menu li{
+    display: inline-block;
+    border: currentColor 1px solid;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer !important;
+}
+.social-menu li:hover{
+    cursor: pointer;
+}
+
+.social-menu li:nth-of-type(2){
+    margin: 0 auto;
+}
+
+.social-menu li svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: currentColor;
+}
+.social-menu li svg *{
+    cursor: pointer;
+}
+
+.facebook{
+    height: 18px;
+    width: 18px;
+}
+.twitter{
+    height: 18px;
+    width: 18px;
+}
+.instagram{
+    height: 20px;
+    width: 20px;
+}
+
+footer{
+    position: absolute;
+    color: #aaa;
+    bottom: 10px;
+    left: 10px;
+}
